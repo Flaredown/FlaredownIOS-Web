@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED194F941CC5795600986C04 /* AlarmView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED194F931CC5795600986C04 /* AlarmView.xib */; };
+		ED194F981CC57A7100986C04 /* FDReminderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED194F971CC57A7100986C04 /* FDReminderManager.m */; };
+		ED194F9B1CC57C3A00986C04 /* FDPopupManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED194F9A1CC57C3A00986C04 /* FDPopupManager.m */; };
+		ED194F9E1CC57C5D00986C04 /* FDPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = ED194F9D1CC57C5D00986C04 /* FDPopup.m */; };
+		ED194FA21CC57CA300986C04 /* FDStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = ED194FA11CC57CA300986C04 /* FDStyle.m */; };
+		ED194FA51CC57E0B00986C04 /* FDNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED194FA41CC57E0B00986C04 /* FDNotificationManager.m */; };
+		EDF26CC51CBEE566001D2C7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF26CC41CBEE566001D2C7C /* main.m */; };
+		EDF26CC81CBEE566001D2C7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF26CC71CBEE566001D2C7C /* AppDelegate.m */; };
+		EDF26CCB1CBEE566001D2C7C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF26CCA1CBEE566001D2C7C /* ViewController.m */; };
+		EDF26CCE1CBEE566001D2C7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF26CCC1CBEE566001D2C7C /* Main.storyboard */; };
+		EDF26CD01CBEE566001D2C7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDF26CCF1CBEE566001D2C7C /* Assets.xcassets */; };
+		EDF26CD31CBEE566001D2C7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF26CD11CBEE566001D2C7C /* LaunchScreen.storyboard */; };
+		EDF26CDE1CBEE566001D2C7C /* FlaredownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF26CDD1CBEE566001D2C7C /* FlaredownTests.m */; };
+		EDF26CE91CBEE567001D2C7C /* FlaredownUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF26CE81CBEE567001D2C7C /* FlaredownUITests.m */; };
+		EDF26CF91CBEE712001D2C7C /* FDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF26CF81CBEE712001D2C7C /* FDMainViewController.m */; };
+		EDF26CFC1CBEF2D5001D2C7C /* FDAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF26CFB1CBEF2D5001D2C7C /* FDAlarmViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDF26CDA1CBEE566001D2C7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDF26CB81CBEE566001D2C7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDF26CBF1CBEE566001D2C7C;
+			remoteInfo = Flaredown;
+		};
+		EDF26CE51CBEE567001D2C7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDF26CB81CBEE566001D2C7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDF26CBF1CBEE566001D2C7C;
+			remoteInfo = Flaredown;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ED194F931CC5795600986C04 /* AlarmView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlarmView.xib; sourceTree = "<group>"; };
+		ED194F961CC57A7100986C04 /* FDReminderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDReminderManager.h; sourceTree = "<group>"; };
+		ED194F971CC57A7100986C04 /* FDReminderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDReminderManager.m; sourceTree = "<group>"; };
+		ED194F991CC57C3A00986C04 /* FDPopupManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDPopupManager.h; sourceTree = "<group>"; };
+		ED194F9A1CC57C3A00986C04 /* FDPopupManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDPopupManager.m; sourceTree = "<group>"; };
+		ED194F9C1CC57C5D00986C04 /* FDPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDPopup.h; sourceTree = "<group>"; };
+		ED194F9D1CC57C5D00986C04 /* FDPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDPopup.m; sourceTree = "<group>"; };
+		ED194FA01CC57CA300986C04 /* FDStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDStyle.h; sourceTree = "<group>"; };
+		ED194FA11CC57CA300986C04 /* FDStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDStyle.m; sourceTree = "<group>"; };
+		ED194FA31CC57E0B00986C04 /* FDNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDNotificationManager.h; sourceTree = "<group>"; };
+		ED194FA41CC57E0B00986C04 /* FDNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDNotificationManager.m; sourceTree = "<group>"; };
+		EDF26CC01CBEE566001D2C7C /* Flaredown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flaredown.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF26CC41CBEE566001D2C7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EDF26CC61CBEE566001D2C7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EDF26CC71CBEE566001D2C7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EDF26CC91CBEE566001D2C7C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EDF26CCA1CBEE566001D2C7C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EDF26CCD1CBEE566001D2C7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDF26CCF1CBEE566001D2C7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDF26CD21CBEE566001D2C7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDF26CD41CBEE566001D2C7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDF26CD91CBEE566001D2C7C /* FlaredownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlaredownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF26CDD1CBEE566001D2C7C /* FlaredownTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlaredownTests.m; sourceTree = "<group>"; };
+		EDF26CDF1CBEE566001D2C7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDF26CE41CBEE567001D2C7C /* FlaredownUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlaredownUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF26CE81CBEE567001D2C7C /* FlaredownUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlaredownUITests.m; sourceTree = "<group>"; };
+		EDF26CEA1CBEE567001D2C7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDF26CF71CBEE712001D2C7C /* FDMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDMainViewController.h; sourceTree = "<group>"; };
+		EDF26CF81CBEE712001D2C7C /* FDMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDMainViewController.m; sourceTree = "<group>"; };
+		EDF26CFA1CBEF2D5001D2C7C /* FDAlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDAlarmViewController.h; sourceTree = "<group>"; };
+		EDF26CFB1CBEF2D5001D2C7C /* FDAlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDAlarmViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDF26CBD1CBEE566001D2C7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF26CD61CBEE566001D2C7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF26CE11CBEE567001D2C7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED194F901CC5791E00986C04 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED194F9C1CC57C5D00986C04 /* FDPopup.h */,
+				ED194F9D1CC57C5D00986C04 /* FDPopup.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		ED194F911CC5792800986C04 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				ED194F9F1CC57C9800986C04 /* Services */,
+				ED194F951CC57A5C00986C04 /* Managers */,
+				ED194F901CC5791E00986C04 /* Views */,
+				EDF26CF61CBEE6FC001D2C7C /* Controllers */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		ED194F921CC5794300986C04 /* nibs */ = {
+			isa = PBXGroup;
+			children = (
+				ED194F931CC5795600986C04 /* AlarmView.xib */,
+			);
+			name = nibs;
+			sourceTree = "<group>";
+		};
+		ED194F951CC57A5C00986C04 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				ED194F961CC57A7100986C04 /* FDReminderManager.h */,
+				ED194F971CC57A7100986C04 /* FDReminderManager.m */,
+				ED194F991CC57C3A00986C04 /* FDPopupManager.h */,
+				ED194F9A1CC57C3A00986C04 /* FDPopupManager.m */,
+				ED194FA31CC57E0B00986C04 /* FDNotificationManager.h */,
+				ED194FA41CC57E0B00986C04 /* FDNotificationManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		ED194F9F1CC57C9800986C04 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ED194FA01CC57CA300986C04 /* FDStyle.h */,
+				ED194FA11CC57CA300986C04 /* FDStyle.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		EDF26CB71CBEE566001D2C7C = {
+			isa = PBXGroup;
+			children = (
+				EDF26CC21CBEE566001D2C7C /* Flaredown */,
+				EDF26CDC1CBEE566001D2C7C /* FlaredownTests */,
+				EDF26CE71CBEE567001D2C7C /* FlaredownUITests */,
+				EDF26CC11CBEE566001D2C7C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDF26CC11CBEE566001D2C7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDF26CC01CBEE566001D2C7C /* Flaredown.app */,
+				EDF26CD91CBEE566001D2C7C /* FlaredownTests.xctest */,
+				EDF26CE41CBEE567001D2C7C /* FlaredownUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDF26CC21CBEE566001D2C7C /* Flaredown */ = {
+			isa = PBXGroup;
+			children = (
+				ED194F921CC5794300986C04 /* nibs */,
+				ED194F911CC5792800986C04 /* src */,
+				EDF26CC61CBEE566001D2C7C /* AppDelegate.h */,
+				EDF26CC71CBEE566001D2C7C /* AppDelegate.m */,
+				EDF26CC91CBEE566001D2C7C /* ViewController.h */,
+				EDF26CCA1CBEE566001D2C7C /* ViewController.m */,
+				EDF26CCC1CBEE566001D2C7C /* Main.storyboard */,
+				EDF26CCF1CBEE566001D2C7C /* Assets.xcassets */,
+				EDF26CD11CBEE566001D2C7C /* LaunchScreen.storyboard */,
+				EDF26CD41CBEE566001D2C7C /* Info.plist */,
+				EDF26CC31CBEE566001D2C7C /* Supporting Files */,
+			);
+			path = Flaredown;
+			sourceTree = "<group>";
+		};
+		EDF26CC31CBEE566001D2C7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDF26CC41CBEE566001D2C7C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDF26CDC1CBEE566001D2C7C /* FlaredownTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDF26CDD1CBEE566001D2C7C /* FlaredownTests.m */,
+				EDF26CDF1CBEE566001D2C7C /* Info.plist */,
+			);
+			path = FlaredownTests;
+			sourceTree = "<group>";
+		};
+		EDF26CE71CBEE567001D2C7C /* FlaredownUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EDF26CE81CBEE567001D2C7C /* FlaredownUITests.m */,
+				EDF26CEA1CBEE567001D2C7C /* Info.plist */,
+			);
+			path = FlaredownUITests;
+			sourceTree = "<group>";
+		};
+		EDF26CF61CBEE6FC001D2C7C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EDF26CF71CBEE712001D2C7C /* FDMainViewController.h */,
+				EDF26CF81CBEE712001D2C7C /* FDMainViewController.m */,
+				EDF26CFA1CBEF2D5001D2C7C /* FDAlarmViewController.h */,
+				EDF26CFB1CBEF2D5001D2C7C /* FDAlarmViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDF26CBF1CBEE566001D2C7C /* Flaredown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDF26CED1CBEE567001D2C7C /* Build configuration list for PBXNativeTarget "Flaredown" */;
+			buildPhases = (
+				EDF26CBC1CBEE566001D2C7C /* Sources */,
+				EDF26CBD1CBEE566001D2C7C /* Frameworks */,
+				EDF26CBE1CBEE566001D2C7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Flaredown;
+			productName = Flaredown;
+			productReference = EDF26CC01CBEE566001D2C7C /* Flaredown.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDF26CD81CBEE566001D2C7C /* FlaredownTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDF26CF01CBEE567001D2C7C /* Build configuration list for PBXNativeTarget "FlaredownTests" */;
+			buildPhases = (
+				EDF26CD51CBEE566001D2C7C /* Sources */,
+				EDF26CD61CBEE566001D2C7C /* Frameworks */,
+				EDF26CD71CBEE566001D2C7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDF26CDB1CBEE566001D2C7C /* PBXTargetDependency */,
+			);
+			name = FlaredownTests;
+			productName = FlaredownTests;
+			productReference = EDF26CD91CBEE566001D2C7C /* FlaredownTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EDF26CE31CBEE567001D2C7C /* FlaredownUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDF26CF31CBEE567001D2C7C /* Build configuration list for PBXNativeTarget "FlaredownUITests" */;
+			buildPhases = (
+				EDF26CE01CBEE567001D2C7C /* Sources */,
+				EDF26CE11CBEE567001D2C7C /* Frameworks */,
+				EDF26CE21CBEE567001D2C7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDF26CE61CBEE567001D2C7C /* PBXTargetDependency */,
+			);
+			name = FlaredownUITests;
+			productName = FlaredownUITests;
+			productReference = EDF26CE41CBEE567001D2C7C /* FlaredownUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDF26CB81CBEE566001D2C7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Flaredown;
+				TargetAttributes = {
+					EDF26CBF1CBEE566001D2C7C = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = TLZ6GSDS7C;
+					};
+					EDF26CD81CBEE566001D2C7C = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = EDF26CBF1CBEE566001D2C7C;
+					};
+					EDF26CE31CBEE567001D2C7C = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = EDF26CBF1CBEE566001D2C7C;
+					};
+				};
+			};
+			buildConfigurationList = EDF26CBB1CBEE566001D2C7C /* Build configuration list for PBXProject "Flaredown" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDF26CB71CBEE566001D2C7C;
+			productRefGroup = EDF26CC11CBEE566001D2C7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDF26CBF1CBEE566001D2C7C /* Flaredown */,
+				EDF26CD81CBEE566001D2C7C /* FlaredownTests */,
+				EDF26CE31CBEE567001D2C7C /* FlaredownUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDF26CBE1CBEE566001D2C7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF26CD31CBEE566001D2C7C /* LaunchScreen.storyboard in Resources */,
+				EDF26CD01CBEE566001D2C7C /* Assets.xcassets in Resources */,
+				ED194F941CC5795600986C04 /* AlarmView.xib in Resources */,
+				EDF26CCE1CBEE566001D2C7C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF26CD71CBEE566001D2C7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF26CE21CBEE567001D2C7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDF26CBC1CBEE566001D2C7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED194FA51CC57E0B00986C04 /* FDNotificationManager.m in Sources */,
+				EDF26CCB1CBEE566001D2C7C /* ViewController.m in Sources */,
+				EDF26CC81CBEE566001D2C7C /* AppDelegate.m in Sources */,
+				ED194F9E1CC57C5D00986C04 /* FDPopup.m in Sources */,
+				EDF26CFC1CBEF2D5001D2C7C /* FDAlarmViewController.m in Sources */,
+				EDF26CC51CBEE566001D2C7C /* main.m in Sources */,
+				ED194F9B1CC57C3A00986C04 /* FDPopupManager.m in Sources */,
+				EDF26CF91CBEE712001D2C7C /* FDMainViewController.m in Sources */,
+				ED194F981CC57A7100986C04 /* FDReminderManager.m in Sources */,
+				ED194FA21CC57CA300986C04 /* FDStyle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF26CD51CBEE566001D2C7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF26CDE1CBEE566001D2C7C /* FlaredownTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF26CE01CBEE567001D2C7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF26CE91CBEE567001D2C7C /* FlaredownUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDF26CDB1CBEE566001D2C7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDF26CBF1CBEE566001D2C7C /* Flaredown */;
+			targetProxy = EDF26CDA1CBEE566001D2C7C /* PBXContainerItemProxy */;
+		};
+		EDF26CE61CBEE567001D2C7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDF26CBF1CBEE566001D2C7C /* Flaredown */;
+			targetProxy = EDF26CE51CBEE567001D2C7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EDF26CCC1CBEE566001D2C7C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDF26CCD1CBEE566001D2C7C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDF26CD11CBEE566001D2C7C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDF26CD21CBEE566001D2C7C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDF26CEB1CBEE567001D2C7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDF26CEC1CBEE567001D2C7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDF26CEE1CBEE567001D2C7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Flaredown/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flaredown.Flaredown;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EDF26CEF1CBEE567001D2C7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Flaredown/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flaredown.Flaredown;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EDF26CF11CBEE567001D2C7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FlaredownTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flaredown.FlaredownTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flaredown.app/Flaredown";
+			};
+			name = Debug;
+		};
+		EDF26CF21CBEE567001D2C7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FlaredownTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flaredown.FlaredownTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flaredown.app/Flaredown";
+			};
+			name = Release;
+		};
+		EDF26CF41CBEE567001D2C7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FlaredownUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flaredown.FlaredownUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Flaredown;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EDF26CF51CBEE567001D2C7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FlaredownUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flaredown.FlaredownUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Flaredown;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDF26CBB1CBEE566001D2C7C /* Build configuration list for PBXProject "Flaredown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF26CEB1CBEE567001D2C7C /* Debug */,
+				EDF26CEC1CBEE567001D2C7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDF26CED1CBEE567001D2C7C /* Build configuration list for PBXNativeTarget "Flaredown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF26CEE1CBEE567001D2C7C /* Debug */,
+				EDF26CEF1CBEE567001D2C7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDF26CF01CBEE567001D2C7C /* Build configuration list for PBXNativeTarget "FlaredownTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF26CF11CBEE567001D2C7C /* Debug */,
+				EDF26CF21CBEE567001D2C7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDF26CF31CBEE567001D2C7C /* Build configuration list for PBXNativeTarget "FlaredownUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF26CF41CBEE567001D2C7C /* Debug */,
+				EDF26CF51CBEE567001D2C7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDF26CB81CBEE566001D2C7C /* Project object */;
+}
