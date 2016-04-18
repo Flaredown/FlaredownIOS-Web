@@ -30,13 +30,19 @@
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYE-kk-2Zk">
-                                <rect key="frame" x="550" y="550" width="40" height="40"/>
+                                <rect key="frame" x="530" y="530" width="60" height="60"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="UYE-kk-2Zk" secondAttribute="height" multiplier="1:1" id="MgA-Re-Drl"/>
-                                    <constraint firstAttribute="width" constant="40" id="UML-FC-Tcp"/>
+                                    <constraint firstAttribute="width" constant="60" id="UML-FC-Tcp"/>
+                                    <constraint firstAttribute="height" constant="60" id="nkf-0q-eth"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Alarm"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="MgA-Re-Drl"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <segue destination="fMz-v0-mls" kind="show" id="vwR-cX-aYf"/>
                                 </connections>
@@ -121,11 +127,11 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWq-eI-fiC">
-                                        <rect key="frame" x="35" y="8" width="46" height="30"/>
+                                        <rect key="frame" x="10" y="10" width="60" height="60"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="46" id="46x-ub-wU5"/>
+                                            <constraint firstAttribute="width" constant="60" id="46x-ub-wU5"/>
                                             <constraint firstAttribute="width" secondItem="qWq-eI-fiC" secondAttribute="height" multiplier="23:15" id="nQW-Pu-N0S"/>
-                                            <constraint firstAttribute="height" constant="30" id="qdc-Ce-fc8"/>
+                                            <constraint firstAttribute="height" constant="60" id="qdc-Ce-fc8"/>
                                         </constraints>
                                         <state key="normal" title="Back"/>
                                         <variation key="default">
@@ -153,12 +159,12 @@
                                     <constraint firstAttribute="centerY" secondItem="ofs-um-5e5" secondAttribute="centerY" constant="13" id="Lup-UL-TBL"/>
                                     <constraint firstItem="iJL-uk-amF" firstAttribute="top" secondItem="DFz-J5-cjI" secondAttribute="top" constant="30" id="UpV-oa-4jw"/>
                                     <constraint firstItem="iJL-uk-amF" firstAttribute="leading" secondItem="DFz-J5-cjI" secondAttribute="leading" id="eyq-JZ-ce6"/>
-                                    <constraint firstItem="qWq-eI-fiC" firstAttribute="leading" secondItem="Akf-7h-eB7" secondAttribute="leading" constant="35" id="fj9-HH-wpB"/>
+                                    <constraint firstItem="qWq-eI-fiC" firstAttribute="leading" secondItem="Akf-7h-eB7" secondAttribute="leading" constant="10" id="fj9-HH-wpB"/>
                                     <constraint firstItem="ofs-um-5e5" firstAttribute="top" secondItem="pAj-J9-5nu" secondAttribute="bottom" constant="8" id="hbd-k4-yxQ"/>
                                     <constraint firstItem="iJL-uk-amF" firstAttribute="top" secondItem="DFz-J5-cjI" secondAttribute="top" id="imO-5D-asX"/>
                                     <constraint firstAttribute="centerX" secondItem="ofs-um-5e5" secondAttribute="centerX" id="rbf-7o-r6F"/>
                                     <constraint firstItem="iJL-uk-amF" firstAttribute="centerX" secondItem="ofs-um-5e5" secondAttribute="centerX" id="umW-TE-ZXd"/>
-                                    <constraint firstItem="qWq-eI-fiC" firstAttribute="top" secondItem="Akf-7h-eB7" secondAttribute="top" constant="8" id="v9v-UC-MZt"/>
+                                    <constraint firstItem="qWq-eI-fiC" firstAttribute="top" secondItem="Akf-7h-eB7" secondAttribute="top" constant="10" id="v9v-UC-MZt"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
