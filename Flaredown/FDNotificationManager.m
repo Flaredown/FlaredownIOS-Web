@@ -54,7 +54,7 @@ static NSString * const NotificationIdentifierCheckin = @"checkin";
     localNotification.fireDate = date;
     localNotification.repeatInterval = repeatInterval;
     localNotification.alertBody = text;
-    [localNotification.userInfo setValue:identifier forKey:NotificationIdentifierKey];
+    localNotification.userInfo = @{NotificationIdentifierKey:identifier};
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
 }
 
