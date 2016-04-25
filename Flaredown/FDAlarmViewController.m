@@ -30,6 +30,9 @@ static NSString * const unwindToMainSegue = @"unwindToMain";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    _backButton.layer.cornerRadius = _backButton.frame.size.width/2;
+    [FDStyle addShadowToView:_backButton];
+    
     [_reminderSwitch setOn:[[FDReminderManager manager] reminder]];
     [self setupReminderLabel];
 }

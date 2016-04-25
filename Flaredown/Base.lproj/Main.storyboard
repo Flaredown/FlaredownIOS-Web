@@ -31,13 +31,16 @@
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYE-kk-2Zk">
                                 <rect key="frame" x="530" y="530" width="60" height="60"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.45098039220000002" green="0.75686274509999996" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="UYE-kk-2Zk" secondAttribute="height" multiplier="1:1" id="MgA-Re-Drl"/>
                                     <constraint firstAttribute="width" constant="60" id="UML-FC-Tcp"/>
                                     <constraint firstAttribute="height" constant="60" id="nkf-0q-eth"/>
                                 </constraints>
-                                <state key="normal" title="Alarm"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Alarm">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="MgA-Re-Drl"/>
@@ -67,6 +70,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="alarmButton" destination="UYE-kk-2Zk" id="z3y-vC-7Ha"/>
                         <outlet property="webView" destination="xGe-ra-Md6" id="nv6-LF-1MB"/>
                     </connections>
                 </viewController>
@@ -89,7 +93,7 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remind me to check in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAj-J9-5nu">
-                                        <rect key="frame" x="207.5" y="232.5" width="185.5" height="21"/>
+                                        <rect key="frame" x="210.5" y="235.5" width="180" height="18"/>
                                         <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                         <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -102,7 +106,7 @@
                                         </connections>
                                     </switch>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFz-J5-cjI">
-                                        <rect key="frame" x="210" y="305.5" width="181" height="57.5"/>
+                                        <rect key="frame" x="211.5" y="305.5" width="178" height="49"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="46" id="pAt-ql-QfM"/>
                                             <constraint firstAttribute="height" constant="30" id="uAD-ho-Nt5"/>
@@ -121,19 +125,23 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7:00 pm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJL-uk-amF">
-                                        <rect key="frame" x="210" y="305.5" width="180" height="57.5"/>
+                                        <rect key="frame" x="211.5" y="305.5" width="177" height="49"/>
                                         <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="49"/>
                                         <color key="textColor" red="0.45098039220000002" green="0.75686274509999996" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWq-eI-fiC">
-                                        <rect key="frame" x="10" y="10" width="60" height="60"/>
+                                        <rect key="frame" x="530" y="510" width="60" height="60"/>
+                                        <color key="backgroundColor" red="0.45098039220000002" green="0.75686274509999996" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="46x-ub-wU5"/>
                                             <constraint firstAttribute="width" secondItem="qWq-eI-fiC" secondAttribute="height" multiplier="23:15" id="nQW-Pu-N0S"/>
                                             <constraint firstAttribute="height" constant="60" id="qdc-Ce-fc8"/>
                                         </constraints>
-                                        <state key="normal" title="Back"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="nQW-Pu-N0S"/>
@@ -144,7 +152,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.93333333333333335" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="pAj-J9-5nu" firstAttribute="top" secondItem="Akf-7h-eB7" secondAttribute="top" constant="50" id="1Wb-kV-Nyv"/>
                                     <constraint firstAttribute="height" constant="180" id="455-jK-L9I"/>
@@ -157,7 +165,9 @@
                                     <constraint firstItem="iJL-uk-amF" firstAttribute="centerY" secondItem="DFz-J5-cjI" secondAttribute="centerY" id="K0b-WX-Nch"/>
                                     <constraint firstItem="iJL-uk-amF" firstAttribute="bottom" secondItem="DFz-J5-cjI" secondAttribute="bottom" constant="49" id="Lkn-R3-LLA"/>
                                     <constraint firstAttribute="centerY" secondItem="ofs-um-5e5" secondAttribute="centerY" constant="13" id="Lup-UL-TBL"/>
+                                    <constraint firstAttribute="bottom" secondItem="qWq-eI-fiC" secondAttribute="bottom" constant="10" id="QU7-GE-PSj"/>
                                     <constraint firstItem="iJL-uk-amF" firstAttribute="top" secondItem="DFz-J5-cjI" secondAttribute="top" constant="30" id="UpV-oa-4jw"/>
+                                    <constraint firstAttribute="trailing" secondItem="qWq-eI-fiC" secondAttribute="trailing" constant="10" id="dIX-Da-6Zt"/>
                                     <constraint firstItem="iJL-uk-amF" firstAttribute="leading" secondItem="DFz-J5-cjI" secondAttribute="leading" id="eyq-JZ-ce6"/>
                                     <constraint firstItem="qWq-eI-fiC" firstAttribute="leading" secondItem="Akf-7h-eB7" secondAttribute="leading" constant="10" id="fj9-HH-wpB"/>
                                     <constraint firstItem="ofs-um-5e5" firstAttribute="top" secondItem="pAj-J9-5nu" secondAttribute="bottom" constant="8" id="hbd-k4-yxQ"/>
@@ -169,6 +179,8 @@
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="455-jK-L9I"/>
+                                        <exclude reference="fj9-HH-wpB"/>
+                                        <exclude reference="v9v-UC-MZt"/>
                                         <exclude reference="1Wb-kV-Nyv"/>
                                         <exclude reference="4Ra-wy-VTd"/>
                                         <exclude reference="IU6-uy-l1E"/>
@@ -179,7 +191,6 @@
                                 </variation>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Akf-7h-eB7" firstAttribute="centerX" secondItem="Cx2-yY-b0c" secondAttribute="centerX" id="Aeg-KW-xiA"/>
                             <constraint firstItem="jB1-Ma-xil" firstAttribute="top" secondItem="Akf-7h-eB7" secondAttribute="bottom" id="dcH-Dl-x5P"/>
@@ -188,6 +199,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="qWq-eI-fiC" id="C6z-ps-BvS"/>
                         <outlet property="reminderSwitch" destination="ofs-um-5e5" id="814-nZ-5ER"/>
                         <outlet property="reminderTimeLabel" destination="iJL-uk-amF" id="F9s-mH-Jdo"/>
                         <segue destination="NyC-99-dpM" kind="unwind" identifier="unwindToMain" unwindAction="unwindForSegue:towardsViewController:" id="E48-yo-Tfw"/>

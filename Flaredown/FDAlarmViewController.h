@@ -18,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UISwitch *reminderSwitch;
 @property (weak, nonatomic) IBOutlet UILabel *reminderTimeLabel;
 
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
+
 @property UIView *alarmView;
 @property NSDate *reminderTime;
 

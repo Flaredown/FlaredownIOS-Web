@@ -11,5 +11,6 @@
 @interface FDMainViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property (weak, nonatomic) IBOutlet UIButton *alarmButton;
 
 @end

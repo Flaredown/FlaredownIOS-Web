@@ -8,6 +8,8 @@
 
 #import "FDMainViewController.h"
 
+#import "FDStyle.h"
+
 @interface FDMainViewController ()
 
 @end
@@ -21,6 +23,9 @@
     NSURL *url = [NSURL URLWithString:urlString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [_webView loadRequest:request];
+    
+    _alarmButton.layer.cornerRadius = _alarmButton.frame.size.width/2;
+    [FDStyle addShadowToView:_alarmButton];
 }
 
 @end
