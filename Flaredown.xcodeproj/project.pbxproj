@@ -18,7 +18,6 @@
 		EDF26CCB1CBEE566001D2C7C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF26CCA1CBEE566001D2C7C /* ViewController.m */; };
 		EDF26CCE1CBEE566001D2C7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF26CCC1CBEE566001D2C7C /* Main.storyboard */; };
 		EDF26CD01CBEE566001D2C7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDF26CCF1CBEE566001D2C7C /* Assets.xcassets */; };
-		EDF26CD31CBEE566001D2C7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF26CD11CBEE566001D2C7C /* LaunchScreen.storyboard */; };
 		EDF26CDE1CBEE566001D2C7C /* FlaredownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF26CDD1CBEE566001D2C7C /* FlaredownTests.m */; };
 		EDF26CE91CBEE567001D2C7C /* FlaredownUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF26CE81CBEE567001D2C7C /* FlaredownUITests.m */; };
 		EDF26CF91CBEE712001D2C7C /* FDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF26CF81CBEE712001D2C7C /* FDMainViewController.m */; };
@@ -62,7 +61,6 @@
 		EDF26CCA1CBEE566001D2C7C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EDF26CCD1CBEE566001D2C7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDF26CCF1CBEE566001D2C7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EDF26CD21CBEE566001D2C7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDF26CD41CBEE566001D2C7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDF26CD91CBEE566001D2C7C /* FlaredownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlaredownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDF26CDD1CBEE566001D2C7C /* FlaredownTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlaredownTests.m; sourceTree = "<group>"; };
@@ -182,7 +180,6 @@
 				EDF26CCA1CBEE566001D2C7C /* ViewController.m */,
 				EDF26CCC1CBEE566001D2C7C /* Main.storyboard */,
 				EDF26CCF1CBEE566001D2C7C /* Assets.xcassets */,
-				EDF26CD11CBEE566001D2C7C /* LaunchScreen.storyboard */,
 				EDF26CD41CBEE566001D2C7C /* Info.plist */,
 				EDF26CC31CBEE566001D2C7C /* Supporting Files */,
 			);
@@ -330,7 +327,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDF26CD31CBEE566001D2C7C /* LaunchScreen.storyboard in Resources */,
 				EDF26CD01CBEE566001D2C7C /* Assets.xcassets in Resources */,
 				ED194F941CC5795600986C04 /* AlarmView.xib in Resources */,
 				EDF26CCE1CBEE566001D2C7C /* Main.storyboard in Resources */,
@@ -409,14 +405,6 @@
 				EDF26CCD1CBEE566001D2C7C /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EDF26CD11CBEE566001D2C7C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EDF26CD21CBEE566001D2C7C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -508,6 +496,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Flaredown/Info.plist;
@@ -522,6 +511,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Flaredown/Info.plist;
