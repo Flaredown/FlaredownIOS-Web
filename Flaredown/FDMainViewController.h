@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FDMainViewController : UIViewController
+#import "MBProgressHUD.h"
+
+@interface FDMainViewController : UIViewController <MBProgressHUDDelegate>
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UIButton *alarmButton;

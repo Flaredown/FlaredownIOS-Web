@@ -18,14 +18,34 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //Style page
+    _alarmButton.layer.cornerRadius = _alarmButton.frame.size.width/2;
+    [FDStyle addShadowToView:_alarmButton];
+}
 
+- (void)viewDidAppear:(BOOL)animated {
+    
+    //Setup progress
+    MBProgressHUD *hud = [[MBProgressHUD alloc] initWithWindow:[UIApplication sharedApplication].keyWindow];
+    [self.view.window addSubview:hud];
+    hud.delegate = self;
+    
+    //Show web page
+    [self loadWebView];
+    
+    //Hide progress
+    [hud hide:YES];
+    if(hud != nil) {
+        [hud removeFromSuperview];
+    }
+}
+
+- (void)loadWebView {
     NSString *urlString = @"https://app.flaredown.com/";
     NSURL *url = [NSURL URLWithString:urlString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [_webView loadRequest:request];
-    
-    _alarmButton.layer.cornerRadius = _alarmButton.frame.size.width/2;
-    [FDStyle addShadowToView:_alarmButton];
 }
 
 @end
