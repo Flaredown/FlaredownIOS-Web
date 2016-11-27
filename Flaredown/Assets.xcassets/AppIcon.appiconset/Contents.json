@@ -1,81 +1,101 @@
 {
   "images" : [
     {
+      "size" : "20x20",
+      "idiom" : "iphone",
+      "filename" : "fd_appstore_icon-3.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "iphone",
+      "size" : "20x20",
+      "scale" : "3x"
+    },
+    {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "fd_app_icon-58pt.png",
+      "filename" : "fd_appstore_icon.png",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "fd_app_icon-87pt.png",
+      "filename" : "fd_appstore_icon-1.png",
       "scale" : "3x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "fd_app_icon-80pt.png",
+      "filename" : "fd_appstore_icon-2.png",
       "scale" : "2x"
     },
     {
-      "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "fd_app_icon-120pt.png",
+      "size" : "40x40",
       "scale" : "3x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "fd_app_icon-120pt-1.png",
+      "filename" : "fd_appstore_icon-4.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "fd_app_icon.png",
+      "filename" : "fd_appstore_icon-5.png",
       "scale" : "3x"
     },
     {
+      "idiom" : "ipad",
+      "size" : "20x20",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "ipad",
+      "size" : "20x20",
+      "scale" : "2x"
+    },
+    {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "fd_app_icon-29pt.png",
+      "filename" : "fd_appstore_icon-7.png",
       "scale" : "1x"
     },
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "fd_app_icon-58pt-1.png",
+      "filename" : "fd_appstore_icon-6.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "fd_app_icon-40pt.png",
+      "filename" : "fd_appstore_icon-12.png",
       "scale" : "1x"
     },
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "fd_app_icon-80pt-1.png",
+      "filename" : "fd_appstore_icon-10.png",
       "scale" : "2x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "fd_app_icon-76pt-1.png",
+      "filename" : "fd_appstore_icon-8.png",
       "scale" : "1x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "fd_app_icon-152pt.png",
+      "filename" : "fd_appstore_icon-9.png",
       "scale" : "2x"
     },
     {
       "size" : "83.5x83.5",
       "idiom" : "ipad",
-      "filename" : "fd_app_icon-167pt-1.png",
+      "filename" : "fd_appstore_icon-11.png",
       "scale" : "2x"
     }
   ],
