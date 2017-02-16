@@ -1,1537 +1,696 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0DD3C1A0680B389B3EC28CEC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Flaredown/Pods-Flaredown-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>23E5DFC99033C071CC2BE7B8</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FCBD9CE2BAB4293273C50CF6</string>
-				<string>7AB28B9DA7A4AE78FF384E44</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7AB28B9DA7A4AE78FF384E44</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Flaredown.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Flaredown/Pods-Flaredown.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>92686F0992C415940CC24819</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BC60EA34AC7764A9616F9BB2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B109CADDF7D8867B38BD4A51</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>BC60EA34AC7764A9616F9BB2</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_Flaredown.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>D5CF940B26FF2D0FCE8179CD</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BC60EA34AC7764A9616F9BB2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DBF998CA0FE31269A9EE8B82</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Flaredown/Pods-Flaredown-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>ED04EF041CD6E65700521E35</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>path</key>
-			<string>Launch.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED04EF051CD6E65700521E35</key>
-		<dict>
-			<key>fileRef</key>
-			<string>ED04EF041CD6E65700521E35</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>ED194F901CC5791E00986C04</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>ED194F9C1CC57C5D00986C04</string>
-				<string>ED194F9D1CC57C5D00986C04</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Views</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED194F911CC5792800986C04</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>ED194F9F1CC57C9800986C04</string>
-				<string>ED194F951CC57A5C00986C04</string>
-				<string>ED194F901CC5791E00986C04</string>
-				<string>EDF26CF61CBEE6FC001D2C7C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>src</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED194F921CC5794300986C04</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>ED194F931CC5795600986C04</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>nibs</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED194F931CC5795600986C04</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>AlarmView.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED194F941CC5795600986C04</key>
-		<dict>
-			<key>fileRef</key>
-			<string>ED194F931CC5795600986C04</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>ED194F951CC57A5C00986C04</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>ED194F961CC57A7100986C04</string>
-				<string>ED194F971CC57A7100986C04</string>
-				<string>ED194F991CC57C3A00986C04</string>
-				<string>ED194F9A1CC57C3A00986C04</string>
-				<string>ED194FA31CC57E0B00986C04</string>
-				<string>ED194FA41CC57E0B00986C04</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Managers</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED194F961CC57A7100986C04</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FDReminderManager.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED194F971CC57A7100986C04</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>FDReminderManager.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED194F981CC57A7100986C04</key>
-		<dict>
-			<key>fileRef</key>
-			<string>ED194F971CC57A7100986C04</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>ED194F991CC57C3A00986C04</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FDPopupManager.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED194F9A1CC57C3A00986C04</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>FDPopupManager.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED194F9B1CC57C3A00986C04</key>
-		<dict>
-			<key>fileRef</key>
-			<string>ED194F9A1CC57C3A00986C04</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>ED194F9C1CC57C5D00986C04</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FDPopup.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED194F9D1CC57C5D00986C04</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>FDPopup.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED194F9E1CC57C5D00986C04</key>
-		<dict>
-			<key>fileRef</key>
-			<string>ED194F9D1CC57C5D00986C04</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>ED194F9F1CC57C9800986C04</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>ED194FA01CC57CA300986C04</string>
-				<string>ED194FA11CC57CA300986C04</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Services</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED194FA01CC57CA300986C04</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FDStyle.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED194FA11CC57CA300986C04</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>FDStyle.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED194FA21CC57CA300986C04</key>
-		<dict>
-			<key>fileRef</key>
-			<string>ED194FA11CC57CA300986C04</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>ED194FA31CC57E0B00986C04</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FDNotificationManager.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED194FA41CC57E0B00986C04</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>FDNotificationManager.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ED194FA51CC57E0B00986C04</key>
-		<dict>
-			<key>fileRef</key>
-			<string>ED194FA41CC57E0B00986C04</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EDF26CB71CBEE566001D2C7C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EDF26CC21CBEE566001D2C7C</string>
-				<string>EDF26CDC1CBEE566001D2C7C</string>
-				<string>EDF26CE71CBEE567001D2C7C</string>
-				<string>EDF26CC11CBEE566001D2C7C</string>
-				<string>23E5DFC99033C071CC2BE7B8</string>
-				<string>D5CF940B26FF2D0FCE8179CD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDF26CB81CBEE566001D2C7C</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0720</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Flaredown</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>EDF26CBF1CBEE566001D2C7C</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.2</string>
-						<key>DevelopmentTeam</key>
-						<string>TLZ6GSDS7C</string>
-					</dict>
-					<key>EDF26CD81CBEE566001D2C7C</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.2</string>
-						<key>TestTargetID</key>
-						<string>EDF26CBF1CBEE566001D2C7C</string>
-					</dict>
-					<key>EDF26CE31CBEE567001D2C7C</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.2</string>
-						<key>TestTargetID</key>
-						<string>EDF26CBF1CBEE566001D2C7C</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>EDF26CBB1CBEE566001D2C7C</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>EDF26CB71CBEE566001D2C7C</string>
-			<key>productRefGroup</key>
-			<string>EDF26CC11CBEE566001D2C7C</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>EDF26CBF1CBEE566001D2C7C</string>
-				<string>EDF26CD81CBEE566001D2C7C</string>
-				<string>EDF26CE31CBEE567001D2C7C</string>
-			</array>
-		</dict>
-		<key>EDF26CBB1CBEE566001D2C7C</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>EDF26CEB1CBEE567001D2C7C</string>
-				<string>EDF26CEC1CBEE567001D2C7C</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>EDF26CBC1CBEE566001D2C7C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>ED194FA51CC57E0B00986C04</string>
-				<string>EDF26CCB1CBEE566001D2C7C</string>
-				<string>EDF26CC81CBEE566001D2C7C</string>
-				<string>ED194F9E1CC57C5D00986C04</string>
-				<string>EDF26CFC1CBEF2D5001D2C7C</string>
-				<string>EDF26CC51CBEE566001D2C7C</string>
-				<string>ED194F9B1CC57C3A00986C04</string>
-				<string>EDF26CF91CBEE712001D2C7C</string>
-				<string>ED194F981CC57A7100986C04</string>
-				<string>ED194FA21CC57CA300986C04</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EDF26CBD1CBEE566001D2C7C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>92686F0992C415940CC24819</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EDF26CBE1CBEE566001D2C7C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>EDF26CD01CBEE566001D2C7C</string>
-				<string>ED194F941CC5795600986C04</string>
-				<string>EDF26CCE1CBEE566001D2C7C</string>
-				<string>ED04EF051CD6E65700521E35</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EDF26CBF1CBEE566001D2C7C</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>EDF26CED1CBEE567001D2C7C</string>
-			<key>buildPhases</key>
-			<array>
-				<string>B109CADDF7D8867B38BD4A51</string>
-				<string>EDF26CBC1CBEE566001D2C7C</string>
-				<string>EDF26CBD1CBEE566001D2C7C</string>
-				<string>EDF26CBE1CBEE566001D2C7C</string>
-				<string>0DD3C1A0680B389B3EC28CEC</string>
-				<string>DBF998CA0FE31269A9EE8B82</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Flaredown</string>
-			<key>productName</key>
-			<string>Flaredown</string>
-			<key>productReference</key>
-			<string>EDF26CC01CBEE566001D2C7C</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>EDF26CC01CBEE566001D2C7C</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Flaredown.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>EDF26CC11CBEE566001D2C7C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EDF26CC01CBEE566001D2C7C</string>
-				<string>EDF26CD91CBEE566001D2C7C</string>
-				<string>EDF26CE41CBEE567001D2C7C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDF26CC21CBEE566001D2C7C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>ED194F921CC5794300986C04</string>
-				<string>ED194F911CC5792800986C04</string>
-				<string>EDF26CC61CBEE566001D2C7C</string>
-				<string>EDF26CC71CBEE566001D2C7C</string>
-				<string>EDF26CC91CBEE566001D2C7C</string>
-				<string>EDF26CCA1CBEE566001D2C7C</string>
-				<string>EDF26CCC1CBEE566001D2C7C</string>
-				<string>ED04EF041CD6E65700521E35</string>
-				<string>EDF26CCF1CBEE566001D2C7C</string>
-				<string>EDF26CD41CBEE566001D2C7C</string>
-				<string>EDF26CC31CBEE566001D2C7C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Flaredown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDF26CC31CBEE566001D2C7C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EDF26CC41CBEE566001D2C7C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDF26CC41CBEE566001D2C7C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDF26CC51CBEE566001D2C7C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EDF26CC41CBEE566001D2C7C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EDF26CC61CBEE566001D2C7C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDF26CC71CBEE566001D2C7C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDF26CC81CBEE566001D2C7C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EDF26CC71CBEE566001D2C7C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EDF26CC91CBEE566001D2C7C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>ViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDF26CCA1CBEE566001D2C7C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>ViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDF26CCB1CBEE566001D2C7C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EDF26CCA1CBEE566001D2C7C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EDF26CCC1CBEE566001D2C7C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EDF26CCD1CBEE566001D2C7C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDF26CCD1CBEE566001D2C7C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDF26CCE1CBEE566001D2C7C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EDF26CCC1CBEE566001D2C7C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EDF26CCF1CBEE566001D2C7C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDF26CD01CBEE566001D2C7C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EDF26CCF1CBEE566001D2C7C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EDF26CD41CBEE566001D2C7C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDF26CD51CBEE566001D2C7C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>EDF26CDE1CBEE566001D2C7C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EDF26CD61CBEE566001D2C7C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EDF26CD71CBEE566001D2C7C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EDF26CD81CBEE566001D2C7C</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>EDF26CF01CBEE567001D2C7C</string>
-			<key>buildPhases</key>
-			<array>
-				<string>EDF26CD51CBEE566001D2C7C</string>
-				<string>EDF26CD61CBEE566001D2C7C</string>
-				<string>EDF26CD71CBEE566001D2C7C</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>EDF26CDB1CBEE566001D2C7C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>FlaredownTests</string>
-			<key>productName</key>
-			<string>FlaredownTests</string>
-			<key>productReference</key>
-			<string>EDF26CD91CBEE566001D2C7C</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>EDF26CD91CBEE566001D2C7C</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>FlaredownTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>EDF26CDA1CBEE566001D2C7C</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>EDF26CB81CBEE566001D2C7C</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>EDF26CBF1CBEE566001D2C7C</string>
-			<key>remoteInfo</key>
-			<string>Flaredown</string>
-		</dict>
-		<key>EDF26CDB1CBEE566001D2C7C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>EDF26CBF1CBEE566001D2C7C</string>
-			<key>targetProxy</key>
-			<string>EDF26CDA1CBEE566001D2C7C</string>
-		</dict>
-		<key>EDF26CDC1CBEE566001D2C7C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EDF26CDD1CBEE566001D2C7C</string>
-				<string>EDF26CDF1CBEE566001D2C7C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>FlaredownTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDF26CDD1CBEE566001D2C7C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>FlaredownTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDF26CDE1CBEE566001D2C7C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EDF26CDD1CBEE566001D2C7C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EDF26CDF1CBEE566001D2C7C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDF26CE01CBEE567001D2C7C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>EDF26CE91CBEE567001D2C7C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EDF26CE11CBEE567001D2C7C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EDF26CE21CBEE567001D2C7C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>EDF26CE31CBEE567001D2C7C</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>EDF26CF31CBEE567001D2C7C</string>
-			<key>buildPhases</key>
-			<array>
-				<string>EDF26CE01CBEE567001D2C7C</string>
-				<string>EDF26CE11CBEE567001D2C7C</string>
-				<string>EDF26CE21CBEE567001D2C7C</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>EDF26CE61CBEE567001D2C7C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>FlaredownUITests</string>
-			<key>productName</key>
-			<string>FlaredownUITests</string>
-			<key>productReference</key>
-			<string>EDF26CE41CBEE567001D2C7C</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.ui-testing</string>
-		</dict>
-		<key>EDF26CE41CBEE567001D2C7C</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>FlaredownUITests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>EDF26CE51CBEE567001D2C7C</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>EDF26CB81CBEE566001D2C7C</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>EDF26CBF1CBEE566001D2C7C</string>
-			<key>remoteInfo</key>
-			<string>Flaredown</string>
-		</dict>
-		<key>EDF26CE61CBEE567001D2C7C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>EDF26CBF1CBEE566001D2C7C</string>
-			<key>targetProxy</key>
-			<string>EDF26CE51CBEE567001D2C7C</string>
-		</dict>
-		<key>EDF26CE71CBEE567001D2C7C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EDF26CE81CBEE567001D2C7C</string>
-				<string>EDF26CEA1CBEE567001D2C7C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>FlaredownUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDF26CE81CBEE567001D2C7C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>FlaredownUITests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDF26CE91CBEE567001D2C7C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EDF26CE81CBEE567001D2C7C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EDF26CEA1CBEE567001D2C7C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDF26CEB1CBEE567001D2C7C</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.2</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>EDF26CEC1CBEE567001D2C7C</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.2</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>EDF26CED1CBEE567001D2C7C</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>EDF26CEE1CBEE567001D2C7C</string>
-				<string>EDF26CEF1CBEE567001D2C7C</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>EDF26CEE1CBEE567001D2C7C</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>FCBD9CE2BAB4293273C50CF6</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>iPhone Developer</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Flaredown/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.flaredown.flaredown</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PROVISIONING_PROFILE</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>EDF26CEF1CBEE567001D2C7C</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>7AB28B9DA7A4AE78FF384E44</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>iPhone Developer</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Flaredown/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.flaredown.flaredown</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PROVISIONING_PROFILE</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>EDF26CF01CBEE567001D2C7C</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>EDF26CF11CBEE567001D2C7C</string>
-				<string>EDF26CF21CBEE567001D2C7C</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>EDF26CF11CBEE567001D2C7C</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>FlaredownTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.flaredown.FlaredownTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Flaredown.app/Flaredown</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>EDF26CF21CBEE567001D2C7C</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>FlaredownTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.flaredown.FlaredownTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Flaredown.app/Flaredown</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>EDF26CF31CBEE567001D2C7C</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>EDF26CF41CBEE567001D2C7C</string>
-				<string>EDF26CF51CBEE567001D2C7C</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>EDF26CF41CBEE567001D2C7C</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>FlaredownUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.flaredown.FlaredownUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>Flaredown</string>
-				<key>USES_XCTRUNNER</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>EDF26CF51CBEE567001D2C7C</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>FlaredownUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.flaredown.FlaredownUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>Flaredown</string>
-				<key>USES_XCTRUNNER</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>EDF26CF61CBEE6FC001D2C7C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EDF26CF71CBEE712001D2C7C</string>
-				<string>EDF26CF81CBEE712001D2C7C</string>
-				<string>EDF26CFA1CBEF2D5001D2C7C</string>
-				<string>EDF26CFB1CBEF2D5001D2C7C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Controllers</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDF26CF71CBEE712001D2C7C</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FDMainViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDF26CF81CBEE712001D2C7C</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>FDMainViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDF26CF91CBEE712001D2C7C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EDF26CF81CBEE712001D2C7C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EDF26CFA1CBEF2D5001D2C7C</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FDAlarmViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDF26CFB1CBEF2D5001D2C7C</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>FDAlarmViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EDF26CFC1CBEF2D5001D2C7C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EDF26CFB1CBEF2D5001D2C7C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FCBD9CE2BAB4293273C50CF6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Flaredown.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Flaredown/Pods-Flaredown.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>EDF26CB81CBEE566001D2C7C</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		92686F0992C415940CC24819 /* Pods_Flaredown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC60EA34AC7764A9616F9BB2 /* Pods_Flaredown.framework */; };
+		ED04EF051CD6E65700521E35 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED04EF041CD6E65700521E35 /* Launch.storyboard */; };
+		ED194F941CC5795600986C04 /* AlarmView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED194F931CC5795600986C04 /* AlarmView.xib */; };
+		ED194F981CC57A7100986C04 /* FDReminderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED194F971CC57A7100986C04 /* FDReminderManager.m */; };
+		ED194F9B1CC57C3A00986C04 /* FDPopupManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED194F9A1CC57C3A00986C04 /* FDPopupManager.m */; };
+		ED194F9E1CC57C5D00986C04 /* FDPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = ED194F9D1CC57C5D00986C04 /* FDPopup.m */; };
+		ED194FA21CC57CA300986C04 /* FDStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = ED194FA11CC57CA300986C04 /* FDStyle.m */; };
+		ED194FA51CC57E0B00986C04 /* FDNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED194FA41CC57E0B00986C04 /* FDNotificationManager.m */; };
+		EDF26CC51CBEE566001D2C7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF26CC41CBEE566001D2C7C /* main.m */; };
+		EDF26CC81CBEE566001D2C7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF26CC71CBEE566001D2C7C /* AppDelegate.m */; };
+		EDF26CCB1CBEE566001D2C7C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF26CCA1CBEE566001D2C7C /* ViewController.m */; };
+		EDF26CCE1CBEE566001D2C7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF26CCC1CBEE566001D2C7C /* Main.storyboard */; };
+		EDF26CD01CBEE566001D2C7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDF26CCF1CBEE566001D2C7C /* Assets.xcassets */; };
+		EDF26CDE1CBEE566001D2C7C /* FlaredownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF26CDD1CBEE566001D2C7C /* FlaredownTests.m */; };
+		EDF26CE91CBEE567001D2C7C /* FlaredownUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF26CE81CBEE567001D2C7C /* FlaredownUITests.m */; };
+		EDF26CF91CBEE712001D2C7C /* FDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF26CF81CBEE712001D2C7C /* FDMainViewController.m */; };
+		EDF26CFC1CBEF2D5001D2C7C /* FDAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF26CFB1CBEF2D5001D2C7C /* FDAlarmViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDF26CDA1CBEE566001D2C7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDF26CB81CBEE566001D2C7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDF26CBF1CBEE566001D2C7C;
+			remoteInfo = Flaredown;
+		};
+		EDF26CE51CBEE567001D2C7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDF26CB81CBEE566001D2C7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDF26CBF1CBEE566001D2C7C;
+			remoteInfo = Flaredown;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7AB28B9DA7A4AE78FF384E44 /* Pods-Flaredown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flaredown.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flaredown/Pods-Flaredown.release.xcconfig"; sourceTree = "<group>"; };
+		BC60EA34AC7764A9616F9BB2 /* Pods_Flaredown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flaredown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED04EF041CD6E65700521E35 /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
+		ED194F931CC5795600986C04 /* AlarmView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlarmView.xib; sourceTree = "<group>"; };
+		ED194F961CC57A7100986C04 /* FDReminderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDReminderManager.h; sourceTree = "<group>"; };
+		ED194F971CC57A7100986C04 /* FDReminderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDReminderManager.m; sourceTree = "<group>"; };
+		ED194F991CC57C3A00986C04 /* FDPopupManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDPopupManager.h; sourceTree = "<group>"; };
+		ED194F9A1CC57C3A00986C04 /* FDPopupManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDPopupManager.m; sourceTree = "<group>"; };
+		ED194F9C1CC57C5D00986C04 /* FDPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDPopup.h; sourceTree = "<group>"; };
+		ED194F9D1CC57C5D00986C04 /* FDPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDPopup.m; sourceTree = "<group>"; };
+		ED194FA01CC57CA300986C04 /* FDStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDStyle.h; sourceTree = "<group>"; };
+		ED194FA11CC57CA300986C04 /* FDStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDStyle.m; sourceTree = "<group>"; };
+		ED194FA31CC57E0B00986C04 /* FDNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDNotificationManager.h; sourceTree = "<group>"; };
+		ED194FA41CC57E0B00986C04 /* FDNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDNotificationManager.m; sourceTree = "<group>"; };
+		EDF26CC01CBEE566001D2C7C /* Flaredown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flaredown.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF26CC41CBEE566001D2C7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EDF26CC61CBEE566001D2C7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EDF26CC71CBEE566001D2C7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EDF26CC91CBEE566001D2C7C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EDF26CCA1CBEE566001D2C7C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EDF26CCD1CBEE566001D2C7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDF26CCF1CBEE566001D2C7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDF26CD41CBEE566001D2C7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDF26CD91CBEE566001D2C7C /* FlaredownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlaredownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF26CDD1CBEE566001D2C7C /* FlaredownTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlaredownTests.m; sourceTree = "<group>"; };
+		EDF26CDF1CBEE566001D2C7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDF26CE41CBEE567001D2C7C /* FlaredownUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlaredownUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF26CE81CBEE567001D2C7C /* FlaredownUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlaredownUITests.m; sourceTree = "<group>"; };
+		EDF26CEA1CBEE567001D2C7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDF26CF71CBEE712001D2C7C /* FDMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDMainViewController.h; sourceTree = "<group>"; };
+		EDF26CF81CBEE712001D2C7C /* FDMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDMainViewController.m; sourceTree = "<group>"; };
+		EDF26CFA1CBEF2D5001D2C7C /* FDAlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDAlarmViewController.h; sourceTree = "<group>"; };
+		EDF26CFB1CBEF2D5001D2C7C /* FDAlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDAlarmViewController.m; sourceTree = "<group>"; };
+		FCBD9CE2BAB4293273C50CF6 /* Pods-Flaredown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flaredown.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flaredown/Pods-Flaredown.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDF26CBD1CBEE566001D2C7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92686F0992C415940CC24819 /* Pods_Flaredown.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF26CD61CBEE566001D2C7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF26CE11CBEE567001D2C7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23E5DFC99033C071CC2BE7B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCBD9CE2BAB4293273C50CF6 /* Pods-Flaredown.debug.xcconfig */,
+				7AB28B9DA7A4AE78FF384E44 /* Pods-Flaredown.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D5CF940B26FF2D0FCE8179CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC60EA34AC7764A9616F9BB2 /* Pods_Flaredown.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED194F901CC5791E00986C04 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED194F9C1CC57C5D00986C04 /* FDPopup.h */,
+				ED194F9D1CC57C5D00986C04 /* FDPopup.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		ED194F911CC5792800986C04 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				ED194F9F1CC57C9800986C04 /* Services */,
+				ED194F951CC57A5C00986C04 /* Managers */,
+				ED194F901CC5791E00986C04 /* Views */,
+				EDF26CF61CBEE6FC001D2C7C /* Controllers */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		ED194F921CC5794300986C04 /* nibs */ = {
+			isa = PBXGroup;
+			children = (
+				ED194F931CC5795600986C04 /* AlarmView.xib */,
+			);
+			name = nibs;
+			sourceTree = "<group>";
+		};
+		ED194F951CC57A5C00986C04 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				ED194F961CC57A7100986C04 /* FDReminderManager.h */,
+				ED194F971CC57A7100986C04 /* FDReminderManager.m */,
+				ED194F991CC57C3A00986C04 /* FDPopupManager.h */,
+				ED194F9A1CC57C3A00986C04 /* FDPopupManager.m */,
+				ED194FA31CC57E0B00986C04 /* FDNotificationManager.h */,
+				ED194FA41CC57E0B00986C04 /* FDNotificationManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		ED194F9F1CC57C9800986C04 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ED194FA01CC57CA300986C04 /* FDStyle.h */,
+				ED194FA11CC57CA300986C04 /* FDStyle.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		EDF26CB71CBEE566001D2C7C = {
+			isa = PBXGroup;
+			children = (
+				EDF26CC21CBEE566001D2C7C /* Flaredown */,
+				EDF26CDC1CBEE566001D2C7C /* FlaredownTests */,
+				EDF26CE71CBEE567001D2C7C /* FlaredownUITests */,
+				EDF26CC11CBEE566001D2C7C /* Products */,
+				23E5DFC99033C071CC2BE7B8 /* Pods */,
+				D5CF940B26FF2D0FCE8179CD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EDF26CC11CBEE566001D2C7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDF26CC01CBEE566001D2C7C /* Flaredown.app */,
+				EDF26CD91CBEE566001D2C7C /* FlaredownTests.xctest */,
+				EDF26CE41CBEE567001D2C7C /* FlaredownUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDF26CC21CBEE566001D2C7C /* Flaredown */ = {
+			isa = PBXGroup;
+			children = (
+				ED194F921CC5794300986C04 /* nibs */,
+				ED194F911CC5792800986C04 /* src */,
+				EDF26CC61CBEE566001D2C7C /* AppDelegate.h */,
+				EDF26CC71CBEE566001D2C7C /* AppDelegate.m */,
+				EDF26CC91CBEE566001D2C7C /* ViewController.h */,
+				EDF26CCA1CBEE566001D2C7C /* ViewController.m */,
+				EDF26CCC1CBEE566001D2C7C /* Main.storyboard */,
+				ED04EF041CD6E65700521E35 /* Launch.storyboard */,
+				EDF26CCF1CBEE566001D2C7C /* Assets.xcassets */,
+				EDF26CD41CBEE566001D2C7C /* Info.plist */,
+				EDF26CC31CBEE566001D2C7C /* Supporting Files */,
+			);
+			path = Flaredown;
+			sourceTree = "<group>";
+		};
+		EDF26CC31CBEE566001D2C7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDF26CC41CBEE566001D2C7C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDF26CDC1CBEE566001D2C7C /* FlaredownTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDF26CDD1CBEE566001D2C7C /* FlaredownTests.m */,
+				EDF26CDF1CBEE566001D2C7C /* Info.plist */,
+			);
+			path = FlaredownTests;
+			sourceTree = "<group>";
+		};
+		EDF26CE71CBEE567001D2C7C /* FlaredownUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EDF26CE81CBEE567001D2C7C /* FlaredownUITests.m */,
+				EDF26CEA1CBEE567001D2C7C /* Info.plist */,
+			);
+			path = FlaredownUITests;
+			sourceTree = "<group>";
+		};
+		EDF26CF61CBEE6FC001D2C7C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EDF26CF71CBEE712001D2C7C /* FDMainViewController.h */,
+				EDF26CF81CBEE712001D2C7C /* FDMainViewController.m */,
+				EDF26CFA1CBEF2D5001D2C7C /* FDAlarmViewController.h */,
+				EDF26CFB1CBEF2D5001D2C7C /* FDAlarmViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDF26CBF1CBEE566001D2C7C /* Flaredown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDF26CED1CBEE567001D2C7C /* Build configuration list for PBXNativeTarget "Flaredown" */;
+			buildPhases = (
+				B109CADDF7D8867B38BD4A51 /* [CP] Check Pods Manifest.lock */,
+				EDF26CBC1CBEE566001D2C7C /* Sources */,
+				EDF26CBD1CBEE566001D2C7C /* Frameworks */,
+				EDF26CBE1CBEE566001D2C7C /* Resources */,
+				0DD3C1A0680B389B3EC28CEC /* [CP] Embed Pods Frameworks */,
+				DBF998CA0FE31269A9EE8B82 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Flaredown;
+			productName = Flaredown;
+			productReference = EDF26CC01CBEE566001D2C7C /* Flaredown.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDF26CD81CBEE566001D2C7C /* FlaredownTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDF26CF01CBEE567001D2C7C /* Build configuration list for PBXNativeTarget "FlaredownTests" */;
+			buildPhases = (
+				EDF26CD51CBEE566001D2C7C /* Sources */,
+				EDF26CD61CBEE566001D2C7C /* Frameworks */,
+				EDF26CD71CBEE566001D2C7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDF26CDB1CBEE566001D2C7C /* PBXTargetDependency */,
+			);
+			name = FlaredownTests;
+			productName = FlaredownTests;
+			productReference = EDF26CD91CBEE566001D2C7C /* FlaredownTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EDF26CE31CBEE567001D2C7C /* FlaredownUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDF26CF31CBEE567001D2C7C /* Build configuration list for PBXNativeTarget "FlaredownUITests" */;
+			buildPhases = (
+				EDF26CE01CBEE567001D2C7C /* Sources */,
+				EDF26CE11CBEE567001D2C7C /* Frameworks */,
+				EDF26CE21CBEE567001D2C7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDF26CE61CBEE567001D2C7C /* PBXTargetDependency */,
+			);
+			name = FlaredownUITests;
+			productName = FlaredownUITests;
+			productReference = EDF26CE41CBEE567001D2C7C /* FlaredownUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDF26CB81CBEE566001D2C7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Flaredown;
+				TargetAttributes = {
+					EDF26CBF1CBEE566001D2C7C = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = TLZ6GSDS7C;
+					};
+					EDF26CD81CBEE566001D2C7C = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = EDF26CBF1CBEE566001D2C7C;
+					};
+					EDF26CE31CBEE567001D2C7C = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = EDF26CBF1CBEE566001D2C7C;
+					};
+				};
+			};
+			buildConfigurationList = EDF26CBB1CBEE566001D2C7C /* Build configuration list for PBXProject "Flaredown" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDF26CB71CBEE566001D2C7C;
+			productRefGroup = EDF26CC11CBEE566001D2C7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDF26CBF1CBEE566001D2C7C /* Flaredown */,
+				EDF26CD81CBEE566001D2C7C /* FlaredownTests */,
+				EDF26CE31CBEE567001D2C7C /* FlaredownUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDF26CBE1CBEE566001D2C7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF26CD01CBEE566001D2C7C /* Assets.xcassets in Resources */,
+				ED194F941CC5795600986C04 /* AlarmView.xib in Resources */,
+				EDF26CCE1CBEE566001D2C7C /* Main.storyboard in Resources */,
+				ED04EF051CD6E65700521E35 /* Launch.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF26CD71CBEE566001D2C7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF26CE21CBEE567001D2C7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DD3C1A0680B389B3EC28CEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flaredown/Pods-Flaredown-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B109CADDF7D8867B38BD4A51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DBF998CA0FE31269A9EE8B82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flaredown/Pods-Flaredown-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDF26CBC1CBEE566001D2C7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED194FA51CC57E0B00986C04 /* FDNotificationManager.m in Sources */,
+				EDF26CCB1CBEE566001D2C7C /* ViewController.m in Sources */,
+				EDF26CC81CBEE566001D2C7C /* AppDelegate.m in Sources */,
+				ED194F9E1CC57C5D00986C04 /* FDPopup.m in Sources */,
+				EDF26CFC1CBEF2D5001D2C7C /* FDAlarmViewController.m in Sources */,
+				EDF26CC51CBEE566001D2C7C /* main.m in Sources */,
+				ED194F9B1CC57C3A00986C04 /* FDPopupManager.m in Sources */,
+				EDF26CF91CBEE712001D2C7C /* FDMainViewController.m in Sources */,
+				ED194F981CC57A7100986C04 /* FDReminderManager.m in Sources */,
+				ED194FA21CC57CA300986C04 /* FDStyle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF26CD51CBEE566001D2C7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF26CDE1CBEE566001D2C7C /* FlaredownTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF26CE01CBEE567001D2C7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF26CE91CBEE567001D2C7C /* FlaredownUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDF26CDB1CBEE566001D2C7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDF26CBF1CBEE566001D2C7C /* Flaredown */;
+			targetProxy = EDF26CDA1CBEE566001D2C7C /* PBXContainerItemProxy */;
+		};
+		EDF26CE61CBEE567001D2C7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDF26CBF1CBEE566001D2C7C /* Flaredown */;
+			targetProxy = EDF26CE51CBEE567001D2C7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EDF26CCC1CBEE566001D2C7C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDF26CCD1CBEE566001D2C7C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDF26CEB1CBEE567001D2C7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDF26CEC1CBEE567001D2C7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDF26CEE1CBEE567001D2C7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCBD9CE2BAB4293273C50CF6 /* Pods-Flaredown.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Flaredown/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flaredown.flaredown;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		EDF26CEF1CBEE567001D2C7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AB28B9DA7A4AE78FF384E44 /* Pods-Flaredown.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Flaredown/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flaredown.flaredown;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		EDF26CF11CBEE567001D2C7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FlaredownTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flaredown.FlaredownTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flaredown.app/Flaredown";
+			};
+			name = Debug;
+		};
+		EDF26CF21CBEE567001D2C7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FlaredownTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flaredown.FlaredownTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flaredown.app/Flaredown";
+			};
+			name = Release;
+		};
+		EDF26CF41CBEE567001D2C7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FlaredownUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flaredown.FlaredownUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Flaredown;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EDF26CF51CBEE567001D2C7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FlaredownUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flaredown.FlaredownUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Flaredown;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDF26CBB1CBEE566001D2C7C /* Build configuration list for PBXProject "Flaredown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF26CEB1CBEE567001D2C7C /* Debug */,
+				EDF26CEC1CBEE567001D2C7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDF26CED1CBEE567001D2C7C /* Build configuration list for PBXNativeTarget "Flaredown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF26CEE1CBEE567001D2C7C /* Debug */,
+				EDF26CEF1CBEE567001D2C7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDF26CF01CBEE567001D2C7C /* Build configuration list for PBXNativeTarget "FlaredownTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF26CF11CBEE567001D2C7C /* Debug */,
+				EDF26CF21CBEE567001D2C7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDF26CF31CBEE567001D2C7C /* Build configuration list for PBXNativeTarget "FlaredownUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF26CF41CBEE567001D2C7C /* Debug */,
+				EDF26CF51CBEE567001D2C7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDF26CB81CBEE566001D2C7C /* Project object */;
+}
