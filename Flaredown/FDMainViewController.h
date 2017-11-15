@@ -10,7 +10,7 @@
 
 #import "MBProgressHUD.h"
 
-@interface FDMainViewController : UIViewController <MBProgressHUDDelegate>
+@interface FDMainViewController : UIViewController <MBProgressHUDDelegate, UIWebViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UIButton *alarmButton;

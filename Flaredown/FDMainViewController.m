@@ -20,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.webView.delegate = self;
     
     //Style page
     _alarmButton.layer.cornerRadius = _alarmButton.frame.size.width/2;
@@ -87,6 +88,14 @@
     button.layer.cornerRadius = 5;
     [self.noInternetView addSubview:button];
     
+}
+
+-(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    if (navigationType == UIWebViewNavigationTypeLinkClicked) {
+        [[UIApplication sharedApplication] openURL:[request URL]];
+        return NO;
+    }
+    return YES;
 }
 
 
