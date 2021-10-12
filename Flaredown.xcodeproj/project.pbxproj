@@ -17,7 +17,6 @@
 		ED194FA51CC57E0B00986C04 /* FDNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED194FA41CC57E0B00986C04 /* FDNotificationManager.m */; };
 		EDF26CC51CBEE566001D2C7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF26CC41CBEE566001D2C7C /* main.m */; };
 		EDF26CC81CBEE566001D2C7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF26CC71CBEE566001D2C7C /* AppDelegate.m */; };
-		EDF26CCB1CBEE566001D2C7C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF26CCA1CBEE566001D2C7C /* ViewController.m */; };
 		EDF26CCE1CBEE566001D2C7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF26CCC1CBEE566001D2C7C /* Main.storyboard */; };
 		EDF26CD01CBEE566001D2C7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDF26CCF1CBEE566001D2C7C /* Assets.xcassets */; };
 		EDF26CDE1CBEE566001D2C7C /* FlaredownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF26CDD1CBEE566001D2C7C /* FlaredownTests.m */; };
@@ -62,8 +61,6 @@
 		EDF26CC41CBEE566001D2C7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EDF26CC61CBEE566001D2C7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EDF26CC71CBEE566001D2C7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EDF26CC91CBEE566001D2C7C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EDF26CCA1CBEE566001D2C7C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EDF26CCD1CBEE566001D2C7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDF26CCF1CBEE566001D2C7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDF26CD41CBEE566001D2C7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -202,8 +199,6 @@
 				ED194F911CC5792800986C04 /* src */,
 				EDF26CC61CBEE566001D2C7C /* AppDelegate.h */,
 				EDF26CC71CBEE566001D2C7C /* AppDelegate.m */,
-				EDF26CC91CBEE566001D2C7C /* ViewController.h */,
-				EDF26CCA1CBEE566001D2C7C /* ViewController.m */,
 				EDF26CCC1CBEE566001D2C7C /* Main.storyboard */,
 				ED04EF041CD6E65700521E35 /* Launch.storyboard */,
 				EDF26CCF1CBEE566001D2C7C /* Assets.xcassets */,
@@ -434,7 +429,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED194FA51CC57E0B00986C04 /* FDNotificationManager.m in Sources */,
-				EDF26CCB1CBEE566001D2C7C /* ViewController.m in Sources */,
 				EDF26CC81CBEE566001D2C7C /* AppDelegate.m in Sources */,
 				ED194F9E1CC57C5D00986C04 /* FDPopup.m in Sources */,
 				EDF26CFC1CBEF2D5001D2C7C /* FDAlarmViewController.m in Sources */,
