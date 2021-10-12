@@ -23,7 +23,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.webView.delegate = self;
-    
+    self.webView.clipsToBounds = false;
+    self.webView.scrollView.bounces = false;
+    self.webView.scrollView.clipsToBounds = false;
+  
     //Style page
     _alarmButton.layer.cornerRadius = _alarmButton.frame.size.width/2;
 //    [FDStyle addShadowToView:_alarmButton];
