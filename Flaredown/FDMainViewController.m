@@ -12,6 +12,8 @@
 
 @interface FDMainViewController ()
 
+@property (nonatomic, strong) MBProgressHUD *hud;
+
 @property (nonatomic, strong) UIView *noInternetView;
 
 @end
@@ -30,18 +32,17 @@
 - (void)viewDidAppear:(BOOL)animated {
     
     //Setup progress
-    MBProgressHUD *hud = [[MBProgressHUD alloc] initWithWindow:[UIApplication sharedApplication].keyWindow];
-    [self.view.window addSubview:hud];
-    hud.delegate = self;
+    self.hud = [[MBProgressHUD alloc] initWithView:self.view];
+    [self.hud setMode:MBProgressHUDModeIndeterminate];
+    [self.hud setUserInteractionEnabled:false];
+  
+    [self.view addSubview:self.hud];
+    self.hud.delegate = self;
+  
+    [self.hud showAnimated:true];
     
     //Show web page
     [self loadWebView];
-    
-    //Hide progress
-    [hud hide:YES];
-    if(hud != nil) {
-        [hud removeFromSuperview];
-    }
 }
 
 - (void)loadWebView {
@@ -53,6 +54,7 @@
 
 - (void)reload {
     
+    [self.hud showAnimated:true];
     [self.noInternetView removeFromSuperview];
     [self.webView reload];
 }
@@ -61,6 +63,7 @@
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
     
+    [self.hud hideAnimated:true];
     self.noInternetView = [[UIView alloc] initWithFrame:self.view.bounds];
     self.noInternetView.backgroundColor = [UIColor colorWithRed:0.94 green:0.92 blue:0.89 alpha:1.00];
     [self.view addSubview:self.noInternetView];
@@ -96,6 +99,10 @@
         return NO;
     }
     return YES;
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+  [self.hud hideAnimated:true];
 }
 
 
