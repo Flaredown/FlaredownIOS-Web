@@ -4,10 +4,6 @@ iOS client for FlareDown
 
 ## Bootstrapping
 
-FlareDown for iOS uses [CocoaPods](http://cocoapods.org/). You probably have it installed by now, so after cloning:
+FlareDown for iOS uses Swift Package Manager. You should know how it work by now, so after cloning:
 
-```
-$ pod install
-```
-
-And you should be ready to go.
+Open the project, wait for SPM dependencies to load and you should be ready to go.
