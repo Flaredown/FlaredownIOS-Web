@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		92686F0992C415940CC24819 /* Pods_Flaredown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC60EA34AC7764A9616F9BB2 /* Pods_Flaredown.framework */; };
+		3EA68DF227160DA800016B49 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA68DF127160DA800016B49 /* MBProgressHUD */; };
 		ED04EF051CD6E65700521E35 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED04EF041CD6E65700521E35 /* Launch.storyboard */; };
 		ED194F941CC5795600986C04 /* AlarmView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED194F931CC5795600986C04 /* AlarmView.xib */; };
 		ED194F981CC57A7100986C04 /* FDReminderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED194F971CC57A7100986C04 /* FDReminderManager.m */; };
@@ -44,8 +44,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7AB28B9DA7A4AE78FF384E44 /* Pods-Flaredown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flaredown.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flaredown/Pods-Flaredown.release.xcconfig"; sourceTree = "<group>"; };
-		BC60EA34AC7764A9616F9BB2 /* Pods_Flaredown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flaredown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED04EF041CD6E65700521E35 /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
 		ED194F931CC5795600986C04 /* AlarmView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlarmView.xib; sourceTree = "<group>"; };
 		ED194F961CC57A7100986C04 /* FDReminderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDReminderManager.h; sourceTree = "<group>"; };
@@ -77,7 +75,6 @@
 		EDF26CF81CBEE712001D2C7C /* FDMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDMainViewController.m; sourceTree = "<group>"; };
 		EDF26CFA1CBEF2D5001D2C7C /* FDAlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDAlarmViewController.h; sourceTree = "<group>"; };
 		EDF26CFB1CBEF2D5001D2C7C /* FDAlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDAlarmViewController.m; sourceTree = "<group>"; };
-		FCBD9CE2BAB4293273C50CF6 /* Pods-Flaredown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flaredown.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flaredown/Pods-Flaredown.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92686F0992C415940CC24819 /* Pods_Flaredown.framework in Frameworks */,
+				3EA68DF227160DA800016B49 /* MBProgressHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,23 +103,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		23E5DFC99033C071CC2BE7B8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FCBD9CE2BAB4293273C50CF6 /* Pods-Flaredown.debug.xcconfig */,
-				7AB28B9DA7A4AE78FF384E44 /* Pods-Flaredown.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		D5CF940B26FF2D0FCE8179CD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BC60EA34AC7764A9616F9BB2 /* Pods_Flaredown.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		ED194F901CC5791E00986C04 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,8 +160,6 @@
 				EDF26CDC1CBEE566001D2C7C /* FlaredownTests */,
 				EDF26CE71CBEE567001D2C7C /* FlaredownUITests */,
 				EDF26CC11CBEE566001D2C7C /* Products */,
-				23E5DFC99033C071CC2BE7B8 /* Pods */,
-				D5CF940B26FF2D0FCE8179CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -257,18 +235,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDF26CED1CBEE567001D2C7C /* Build configuration list for PBXNativeTarget "Flaredown" */;
 			buildPhases = (
-				B109CADDF7D8867B38BD4A51 /* [CP] Check Pods Manifest.lock */,
 				EDF26CBC1CBEE566001D2C7C /* Sources */,
 				EDF26CBD1CBEE566001D2C7C /* Frameworks */,
 				EDF26CBE1CBEE566001D2C7C /* Resources */,
-				0DD3C1A0680B389B3EC28CEC /* [CP] Embed Pods Frameworks */,
-				DBF998CA0FE31269A9EE8B82 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Flaredown;
+			packageProductDependencies = (
+				3EA68DF127160DA800016B49 /* MBProgressHUD */,
+			);
 			productName = Flaredown;
 			productReference = EDF26CC01CBEE566001D2C7C /* Flaredown.app */;
 			productType = "com.apple.product-type.application";
@@ -337,10 +315,14 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
 			mainGroup = EDF26CB71CBEE566001D2C7C;
+			packageReferences = (
+				3EA68DF027160DA800016B49 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+			);
 			productRefGroup = EDF26CC11CBEE566001D2C7C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -379,54 +361,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0DD3C1A0680B389B3EC28CEC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flaredown/Pods-Flaredown-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B109CADDF7D8867B38BD4A51 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		DBF998CA0FE31269A9EE8B82 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flaredown/Pods-Flaredown-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EDF26CBC1CBEE566001D2C7C /* Sources */ = {
@@ -577,14 +511,16 @@
 		};
 		EDF26CEE1CBEE567001D2C7C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FCBD9CE2BAB4293273C50CF6 /* Pods-Flaredown.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Flaredown/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.flaredown.flaredown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -593,14 +529,16 @@
 		};
 		EDF26CEF1CBEE567001D2C7C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7AB28B9DA7A4AE78FF384E44 /* Pods-Flaredown.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Flaredown/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.flaredown.flaredown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -612,7 +550,11 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = FlaredownTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.flaredown.FlaredownTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flaredown.app/Flaredown";
@@ -624,7 +566,11 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = FlaredownTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.flaredown.FlaredownTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flaredown.app/Flaredown";
@@ -635,7 +581,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = FlaredownUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.flaredown.FlaredownUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = Flaredown;
@@ -647,7 +597,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = FlaredownUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.flaredown.FlaredownUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = Flaredown;
@@ -695,6 +649,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3EA68DF027160DA800016B49 /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:jdg/MBProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3EA68DF127160DA800016B49 /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3EA68DF027160DA800016B49 /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EDF26CB81CBEE566001D2C7C /* Project object */;
 }

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "MBProgressHUD.h"
+@import MBProgressHUD;
 
 @interface FDMainViewController : UIViewController <MBProgressHUDDelegate, UIWebViewDelegate>
 
