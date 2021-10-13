@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 
 @import MBProgressHUD;
 
-@interface FDMainViewController : UIViewController <MBProgressHUDDelegate, UIWebViewDelegate>
+@interface FDMainViewController : UIViewController <MBProgressHUDDelegate, WKNavigationDelegate>
 
-@property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UIButton *alarmButton;
 
 @end

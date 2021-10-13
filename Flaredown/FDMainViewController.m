@@ -7,13 +7,12 @@
 //
 
 #import "FDMainViewController.h"
-
 #import "FDStyle.h"
 
 @interface FDMainViewController ()
 
 @property (nonatomic, strong) MBProgressHUD *hud;
-
+@property (nonatomic, strong) WKWebView *webView;
 @property (nonatomic, strong) UIView *noInternetView;
 
 @end
@@ -22,7 +21,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.webView.delegate = self;
+
+    WKWebViewConfiguration *theConfiguration = [[WKWebViewConfiguration alloc] init];
+    self.webView = [[WKWebView alloc] initWithFrame:self.view.frame configuration:theConfiguration];
+    [self.view addSubview:self.webView];
+    self.webView.translatesAutoresizingMaskIntoConstraints = true;
+    self.webView.autoresizingMask = (UIViewAutoresizingFlexibleWidth |
+                                UIViewAutoresizingFlexibleHeight);
+
+    self.webView.navigationDelegate = self;
     self.webView.clipsToBounds = false;
     self.webView.scrollView.bounces = false;
     self.webView.scrollView.clipsToBounds = false;
@@ -49,14 +56,12 @@
 }
 
 - (void)loadWebView {
-    NSString *urlString = @"https://app.flaredown.com/";
-    NSURL *url = [NSURL URLWithString:urlString];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    [_webView loadRequest:request];
+    NSURL *url = [NSURL URLWithString:@"http://app.flaredown.com/"];
+    NSURLRequest *nsrequest = [NSURLRequest requestWithURL:url];
+    [self.webView loadRequest:nsrequest];
 }
 
 - (void)reload {
-    
     [self.hud showAnimated:true];
     [self.noInternetView removeFromSuperview];
     [self.webView reload];
@@ -64,7 +69,7 @@
 
 #pragma mark -
 
-- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+- (void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error {
     
     [self.hud hideAnimated:true];
     self.noInternetView = [[UIView alloc] initWithFrame:self.view.bounds];
@@ -96,17 +101,19 @@
     
 }
 
--(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
-    if (navigationType == UIWebViewNavigationTypeLinkClicked) {
-        [[UIApplication sharedApplication] openURL:[request URL]];
-        return NO;
+- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
+    if (navigationAction.navigationType == WKNavigationTypeLinkActivated) {
+        [[UIApplication sharedApplication] openURL:[navigationAction.request URL] options:@{} completionHandler:^(BOOL success) {
+            // log
+        }];
+        decisionHandler(WKNavigationActionPolicyCancel);
+        return;
     }
-    return YES;
+    decisionHandler(WKNavigationActionPolicyAllow);
 }
 
-- (void)webViewDidFinishLoad:(UIWebView *)webView {
-  [self.hud hideAnimated:true];
+- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
+    [self.hud hideAnimated:true];
 }
-
 
 @end

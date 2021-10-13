@@ -24,14 +24,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xGe-ra-Md6">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="XHC-fu-57b"/>
-                                </connections>
-                            </webView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYE-kk-2Zk">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYE-kk-2Zk">
                                 <rect key="frame" x="316" y="8" width="35" height="35"/>
                                 <color key="backgroundColor" red="0.45098039220000002" green="0.75686274509999996" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -55,21 +48,15 @@
                         <color key="backgroundColor" red="0.93316143750000002" green="0.92181259390000003" blue="0.90196603539999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="UYE-kk-2Zk" secondAttribute="trailing" constant="8" id="5g1-bm-2FA"/>
-                            <constraint firstItem="xGe-ra-Md6" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Fov-bK-N0z"/>
-                            <constraint firstItem="UYE-kk-2Zk" firstAttribute="top" secondItem="xGe-ra-Md6" secondAttribute="top" constant="8" id="L0q-Ao-J8h"/>
-                            <constraint firstItem="xGe-ra-Md6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gcl-SF-OZ2"/>
-                            <constraint firstItem="xGe-ra-Md6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="kgT-YS-tNE"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xGe-ra-Md6" secondAttribute="bottom" id="lAf-Og-icC"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="alarmButton" destination="UYE-kk-2Zk" id="z3y-vC-7Ha"/>
-                        <outlet property="webView" destination="xGe-ra-Md6" id="nv6-LF-1MB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="134"/>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
         <!--Alarm View Controller-->
         <scene sceneID="xWl-sv-b7K">
