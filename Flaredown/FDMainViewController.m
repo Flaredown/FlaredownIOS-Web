@@ -29,9 +29,6 @@
   
     //Style page
     _alarmButton.layer.cornerRadius = _alarmButton.frame.size.width/2;
-}
-
-- (void)viewDidAppear:(BOOL)animated {
     
     //Setup progress
     self.hud = [[MBProgressHUD alloc] initWithView:self.view];
