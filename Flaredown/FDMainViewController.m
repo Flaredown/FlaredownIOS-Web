@@ -29,7 +29,6 @@
   
     //Style page
     _alarmButton.layer.cornerRadius = _alarmButton.frame.size.width/2;
-//    [FDStyle addShadowToView:_alarmButton];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
